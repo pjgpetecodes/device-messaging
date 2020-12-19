@@ -1,32 +1,25 @@
-# .NET Azure IoT Hubs Device-Twins Demo
+# .NET Azure IoT Hubs Device Messagin Demo
 
-A .NET Core Azure IoT Hubs Device Twins Demo App
+A .NET Core Azure IoT Hubs Device Messaging Demo App
 
 # Instructions
 
 - Create a new Azure IoT Hub in the Standard or Free Tier.
 - Create an IoT Device.
-- Add a Desired Property of;
+- Install and run the Azure IoT Explorer Application - https://github.com/Azure/azure-iot-explorer/releases
+- Copy the Connection String from the IoT Hub `iothubowner` Shared Access Policy
+- Paste the Connection String into the IoT Hub Explorer Application where prompted
+- Copy the Primary Connection String from the IoT Device
 
-```JSON
-"<Name of desired property>": 10,
-```
-
-- Run the application with;
+- Run the Demo application with;
 
 ```
 dotnet run
 ```
 
-- Copy the Primary Key from the IoT Hub registryRead Shared Access Policy
 - Paste into the console when prompted
-- Copy the Primary Connection String from the IoT Device
-- Paste into the console when prompted
-- Copy the Device ID from the Device Details Page
-- Paste into the conosle when prompted
-- Enter the key name of the Desired Property you created above
-- Enter the name of a Reported Property
-- Change the Desired Property value in the Device Twin and hit the `Save` button.
-- View the change in the console.
-- Enter a value for the Reported Property.
-- Refresh the Device Twin and view the Reported Property change.
+- Enter a Message to Send to the IoT Hub
+- Send a Cloud-to-Device Message with a property added using the Azure IoT Explore Application
+- Invoke a Direct Method called `performUpdate` with a Payload using the Azure IoT Explore Application
+- Monitor the Telemetry using the Azure IoT Explore Application
+- Enter a Message into the Demo Application and view the message using the Azure IoT Explore Application
