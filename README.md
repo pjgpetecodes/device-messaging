@@ -18,8 +18,7 @@ dotnet run
 ```
 
 - Paste into the console when prompted
-- Enter a Message to Send to the IoT Hub
-- Send a Cloud-to-Device Message with a property added using the Azure IoT Explore Application
-- Invoke a Direct Method called `performUpdate` with a Payload using the Azure IoT Explore Application
 - Monitor the Telemetry using the Azure IoT Explore Application
 - Enter a Message into the Demo Application and view the message using the Azure IoT Explore Application
+- Send a Cloud-to-Device Message with a property added using the Azure IoT Explore Application
+- Invoke a Direct Method called `performUpdate` with a Payload using the Azure IoT Explore Application
