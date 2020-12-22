@@ -1,4 +1,4 @@
-# .NET Azure IoT Hubs Device Messagin Demo
+# .NET Azure IoT Hubs Device Messaging Demo
 
 A .NET Core Azure IoT Hubs Device Messaging Demo App
 

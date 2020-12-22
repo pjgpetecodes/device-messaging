@@ -89,6 +89,8 @@ namespace device_messaging
 
         private static Task<MethodResponse> performUpdate(MethodRequest methodRequest, object userContext)
         {
+            Console.WriteLine("IoT Hub invoked the 'performUpdate' method.");
+            Console.WriteLine("Payload:");
             Console.WriteLine(methodRequest.DataAsJson);
 
             var responseMessage = "{\"response\": \"OK\"}";
@@ -100,7 +102,7 @@ namespace device_messaging
         {
             Message message = new Message(Encoding.ASCII.GetBytes(messageToSend));
 
-            //message.Properties.Add("buttonEvent", "true");
+            message.Properties.Add("buttonEvent", "true");
 
             Console.WriteLine("Sending Message {0}", messageToSend);
 
